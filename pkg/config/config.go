@@ -32,6 +32,6 @@ func New(t T) (Configurer, error) {
 	case File:
 		return file.New(), nil
 	default:
-		return nil, errors.New("what?")
+		return nil, errors.New("eh?")
 	}
 }

@@ -8,5 +8,9 @@ import (
 
 func main() {
 	cfg, err := config.New(config.Env)
-	fmt.Printf("%#v %#v", cfg, err)
+	fmt.Printf("%#v %#v\n", cfg, err)
+	cfg, err = config.New(config.File)
+	fmt.Printf("%#v %#v\n", cfg, err)
+	cfg, err = config.New(42)
+	fmt.Printf("%#v %#v\n", cfg, err)
 }
